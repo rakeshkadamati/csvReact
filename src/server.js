@@ -59,6 +59,7 @@ app.get('/', (req, res) => {
 	res.render('index', {fileList: fileList});
 });
 app.post('/', upload.single('csv'), (req, res) => {
+	getFileList();
 	res.status(204).end();
 });
 
