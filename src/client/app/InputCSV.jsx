@@ -33,7 +33,7 @@ class InputCSV extends React.Component {
         }
         this.props.onUpload(file.name, cols, records);
       }
-	});
+    });
   }
   render() {
     return (

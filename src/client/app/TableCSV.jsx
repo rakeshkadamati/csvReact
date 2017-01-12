@@ -53,8 +53,6 @@ class TableCSV extends React.Component {
 			return widths;
 		}
 	}
-	componentWillMount() {
-	}
 	componentWillReceiveProps(nextProps) {
 		this.setState({colNames: nextProps.colNames, 
 			records: nextProps.records, 
@@ -71,7 +69,6 @@ class TableCSV extends React.Component {
 
 	renderRecords() {
 		var {colNames, records, colWidths} = this.state;
-		console.log(colWidths);
 		if (records.length > 0) {
 			return colNames.map((x, i) => {
 				return (
@@ -94,7 +91,7 @@ class TableCSV extends React.Component {
 			rowHeight={50}
 			headerHeight={50}
 			width={screen.availWidth}
-			height={500}
+			height={screen.availHeight-100}
 			isColumnResizing={false}
 			onColumnResizeEndCallback={this._onColumnResizeEndCallback}
 			isColumnResizing={false}

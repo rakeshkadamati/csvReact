@@ -23,7 +23,7 @@ class Index extends React.Component {
 			return (
 				<div id="tablePreview">
 					<div className="alert alert-info" role="alert">
-					Preview <a href={this.state.lastUploaded}>{this.state.lastUploaded}</a>:
+					Preview <a href={'csv/'+this.state.lastUploaded}>{this.state.lastUploaded}</a> ({this.state.records.length} lines.)
 					</div>
 					<TableCSV colNames = {this.state.colNames} records={this.state.records}/>
 				</div>
@@ -34,7 +34,7 @@ class Index extends React.Component {
 		return (
 			<div>
 				<div className='container'>
-					<h1 className="page-header">EZ CSV Viewer</h1>
+					<h1 className="page-header">Reactive CSV</h1>
 					<InputCSV onUpload={this.handleUpload}/>
 					<FileList />
 				</div>
@@ -69,4 +69,4 @@ class FileList extends React.Component {
 	}
 }
 
-render(<Index/>, document.getElementById('home'));
+render(<Index/>, document.getElementById('homeIndex'));
