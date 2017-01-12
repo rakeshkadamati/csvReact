@@ -23,7 +23,7 @@ class Index extends React.Component {
 			return (
 				<div id="tablePreview">
 					<div className="alert alert-info" role="alert">
-					Preview <a href={'csv/'+this.state.lastUploaded}>{this.state.lastUploaded}</a> ({this.state.records.length} lines.)
+					Preview <a href={'csv/'+this.state.lastUploaded}>{this.state.lastUploaded}</a> ({this.state.records.length} lines).
 					</div>
 					<TableCSV colNames = {this.state.colNames} records={this.state.records}/>
 				</div>

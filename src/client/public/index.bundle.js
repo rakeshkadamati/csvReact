@@ -114,7 +114,7 @@
 							),
 							' (',
 							this.state.records.length,
-							' lines.)'
+							' lines).'
 						),
 						_react2.default.createElement(_TableCSV2.default, { colNames: this.state.colNames, records: this.state.records })
 					);
