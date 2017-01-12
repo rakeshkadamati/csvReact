@@ -79,6 +79,7 @@ class TableCSV extends React.Component {
 					cell={<TextCell data={records} field={x}/>}
 					width={colWidths[x] || 50}
 					isResizable={true}
+					allowCellsRecycling={true}
 					/>
 				);
 			});
