@@ -1,4 +1,6 @@
 ## CSVReact
+![preview.gif](https://github.com/rakeshkadamati/csvReact/raw/master/screenshots/reactcsvgif.gif)
+
 
 Run: 
 
@@ -27,5 +29,3 @@ To Do:
 - Filter by keyword
 
 - Integration with Amazon S3 for file storage
-
-![preview.gif](https://github.com/rakeshkadamati/csvReact/raw/master/screenshots/reactcsvgif.gif)
